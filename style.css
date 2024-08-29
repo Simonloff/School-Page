@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;  /* Fondo del cuerpo del sitio en #333 */
+  color: #fff;  /* Color de texto blanco para contraste */
+}
+
+header {
+  background-color: #333;  /* Fondo de la cabecera en #333 */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #333;  /* Fondo de todas las secciones en #333 */
+  color: #fff;  /* Color de texto blanco para contraste */
+  border-radius: 8px;
+  border: 1px solid #444; /* Borde ligero para destacar la sección */
+}
+
+footer {
+  background-color: #333;  /* Fondo del pie de página en #333 */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+ul li a {
+  color: #fff;  /* Enlaces en blanco para contraste */
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.profile-img {
+  width: 500px;  /* Ajusta el ancho de la imagen */
+  height: auto;  /* Mantén la proporción original de la imagen */
+  border-radius: 1%;  /* Hace que la imagen tenga bordes redondeados (círculo) */
+  display: block;
+  margin: 0 auto 20px auto;  /* Centra la imagen con margen inferior */
+}
