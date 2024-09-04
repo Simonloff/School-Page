@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e6f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #6d9886;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos para las secciones */
+.section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Estilo para la barra superior */
+.top-bar {
+    background-color: #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.top-bar .nav {
+    font-size: 1em;
+}
+
+.top-bar .nav a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #6d9886;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
