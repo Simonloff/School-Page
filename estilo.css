@@ -116,3 +116,53 @@ footer p {
     display: block;
     margin: 0 auto;
 }
+/* Estilos para pantallas grandes (escritorio) */
+@media only screen and (min-width: 1024px) {
+    .section {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 30%;
+    }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos para móviles (pantallas pequeñas) */
+@media only screen and (max-width: 767px) {
+    .section {
+        display: block;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    header .profile-img {
+        max-height: 200px; /* Altura reducida en pantallas pequeñas */
+    }
+}
+header .profile-img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Limita la altura máxima */
+    object-fit: cover; /* Asegura que la imagen mantenga proporciones */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
