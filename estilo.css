@@ -166,3 +166,23 @@ header .profile-img {
     object-fit: cover; /* Asegura que la imagen mantenga proporciones */
     border-radius: 8px; /* Bordes redondeados opcionales */
 }
+a {
+  text-decoration: none; /* Quita el subrayado */
+  color: black; /* Cambia el color a negro (o elige otro color) */
+}
+
+a:visited {
+  color: black; /* Cambia el color morado de los enlaces visitados */
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #6d9886; /* Cambia 'blue' por el color que prefieras */
+}
