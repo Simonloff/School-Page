@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RH2BKYXY2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RH2BKYXY2');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Hola</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Infografia</title>
+    <link rel="stylesheet" href="../../estilo.css">
 </head>
 <body>
-    <h1>Infografia</h1>
-    <img src="../../images/sip.png" alt="Infografia">
+    <header>
+        <h1>Esta es la infografia</h1>
+    </header>
+    <section>
+        <h2>Infografia</h2>
+        <ul>
+            <p>Infografia de Arduino</p>
+            <img src="../../images/Sip.png" alt="Infografia">
+    </section>
+
+    <!-- Botón para regresar al inicio -->
+    <button onclick="window.location.href='Semestre2.html'" style="background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+      Ir a proyectos
+    </button>
+
+    <footer>
+        <p>&copy; 2024 Simon Orloff</p>
+    </footer>
 </body>
 </html>
