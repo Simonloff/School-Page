@@ -18,6 +18,7 @@ header h1 {
     margin: 0;
 }
 
+
 /* Contenedor principal */
 .container {
     max-width: 1200px;
@@ -161,11 +162,11 @@ footer p {
 }
 header .profile-img {
     width: 100%;
-    height: auto;
-    max-height: 300px; /* Limita la altura máxima */
-    object-fit: cover; /* Asegura que la imagen mantenga proporciones */
-    border-radius: 8px; /* Bordes redondeados opcionales */
+    height: 100%; /* Asegura que la imagen ocupe todo el espacio del header */
+    object-fit: cover; /* Mantiene las proporciones y llena el contenedor */
+    border-radius: 8px; /* Opcional, para bordes redondeados */
 }
+
 a {
   text-decoration: none; /* Quita el subrayado */
   color: black; /* Cambia el color a negro (o elige otro color) */
@@ -282,3 +283,5 @@ a:hover {
   scale: 0;
   transform: rotate(-45deg);
 }
+
+
