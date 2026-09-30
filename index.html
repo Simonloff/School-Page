@@ -12,55 +12,136 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-Portafolio de Simon Orloff: perfil, proyectos de preparatoria y aplicaciones usadas.">
+    <meta name="theme-color" content="#403022">
     <title>Simon Orloff - E-Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="images/siiiii.jpg" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="images/foto.png" alt="Imagen de fondo" class="profile-img">
-        <h1>Simon Orloff</h1>
-        <h2>Futuro Ingeniero Mecánico</h2>
+    <!-- Filtro duotono con la paleta (tinta las fotos en café/beige) -->
+    <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+        <filter id="duotone" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
+            <feComponentTransfer>
+                <feFuncR type="linear" slope="1.25" intercept="-0.1"/>
+                <feFuncG type="linear" slope="1.25" intercept="-0.1"/>
+                <feFuncB type="linear" slope="1.25" intercept="-0.1"/>
+            </feComponentTransfer>
+            <feComponentTransfer>
+                <feFuncR type="table" tableValues="0.149 0.451 0.651 0.859"/>
+                <feFuncG type="table" tableValues="0.082 0.345 0.553 0.867"/>
+                <feFuncB type="table" tableValues="0.043 0.251 0.467 0.847"/>
+            </feComponentTransfer>
+        </filter>
+    </svg>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Principal">
+            <a class="navbar__logo" href="index.html" aria-label="Simon Orloff, inicio">SO<span>.</span></a>
+            <ul class="navbar__links">
+                <li><a href="Perfil.html">Perfil</a></li>
+                <li><a href="Preparatoria/3°P/TerceroPrepa.html">Proyectos</a></li>
+                <li><a href="Apps.html">Apps</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="section">
-        <div class="card">
-            <a href="Perfil.html">
-                <img src="images/2416021.jpg" alt="Perfil">
-                <h2>Perfil</h2>
-                <p>Conoce un poco más de mí</p>
-            </a>
+    <main>
+        <section class="hero">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <span class="eyebrow">E-Portafolio</span>
+                    <h1>Hola, soy<br><span class="hero__name">Simon Orloff</span></h1>
+                    <p class="hero__role">Futuro Ingeniero Mecánico</p>
+                    <p class="lead">Aquí reúno mi perfil, los proyectos de la preparatoria y las aplicaciones que usé para hacerlos.</p>
+                    <div class="hero__actions">
+                        <a class="btn" href="Preparatoria/3°P/TerceroPrepa.html">
+                            Ver proyectos
+                            <svg class="icon icon--next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                        <a class="btn btn--ghost" href="Perfil.html">Conóceme</a>
+                    </div>
+                </div>
+
+                <div class="hero__art" aria-hidden="true">
+                    <svg viewBox="0 0 400 400" focusable="false">
+                        <circle class="art-disc" cx="200" cy="200" r="188"/>
+                        <circle class="art-ring" cx="200" cy="200" r="160"/>
+                        <g class="gear gear--big"><path fill-rule="evenodd" d="M161.0 232.9 L136.0 244.6 L128.3 231.1 L150.8 215.3 L147.7 205.3 L120.2 204.9 L119.0 189.4 L146.2 184.9 L147.8 174.5 L123.1 162.3 L128.8 147.8 L155.2 155.6 L161.1 146.9 L144.2 125.1 L155.6 114.6 L176.0 133.0 L185.2 127.8 L179.4 100.8 L194.2 96.3 L204.6 121.8 L215.1 121.0 L221.6 94.2 L236.9 96.5 L235.2 124.0 L245.0 127.9 L262.5 106.6 L275.3 115.3 L261.9 139.3 L269.0 147.1 L294.0 135.4 L301.7 148.9 L279.2 164.7 L282.3 174.7 L309.8 175.1 L311.0 190.6 L283.8 195.1 L282.2 205.5 L306.9 217.7 L301.2 232.2 L274.8 224.4 L268.9 233.1 L285.8 254.9 L274.4 265.4 L254.0 247.0 L244.8 252.2 L250.6 279.2 L235.8 283.7 L225.4 258.2 L214.9 259.0 L208.4 285.8 L193.1 283.5 L194.8 256.0 L185.0 252.1 L167.5 273.4 L154.7 264.7 L168.1 240.7Z M189.0 190.0a26 26 0 1 0 52 0a26 26 0 1 0 -52 0Z"/></g>
+                        <g class="gear gear--small"><path fill-rule="evenodd" d="M113.4 225.5 L130.1 203.7 L143.6 214.0 L126.8 235.8 L131.2 243.5 L158.5 239.9 L160.7 256.6 L133.4 260.2 L131.1 268.7 L153.0 285.5 L142.7 298.9 L120.8 282.1 L113.2 286.5 L116.8 313.8 L100.1 316.0 L96.5 288.7 L88.0 286.5 L71.2 308.3 L57.8 298.0 L74.6 276.2 L70.2 268.5 L42.9 272.1 L40.7 255.4 L68.0 251.8 L70.2 243.3 L48.4 226.5 L58.7 213.1 L80.5 229.9 L88.1 225.5 L84.5 198.2 L101.3 196.0 L104.9 223.3Z M86.7 256.0a14 14 0 1 0 28 0a14 14 0 1 0 -28 0Z"/></g>
+                    </svg>
+                    <span class="chip chip--a">Mecánica</span>
+                    <span class="chip chip--b">Coches</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="explora">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>Explora mi portafolio</h2>
+                    <p class="lead">Elige por dónde empezar.</p>
+                </div>
+
+                <div class="card-grid">
+                    <a class="card" href="Perfil.html" data-reveal>
+                        <div class="card__media">
+                            <img class="duotone" src="images/2416021.jpg" alt="" width="1600" height="1200" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Perfil</h3>
+                            <p class="card__text">Conoce un poco más de mí</p>
+                        </div>
+                        <span class="card__cta" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
+
+                    <a class="card" href="Preparatoria/3°P/TerceroPrepa.html" data-reveal>
+                        <div class="card__media">
+                            <img class="duotone" src="images/Wallpapers-pexels-photo.jpg" alt="" width="4608" height="3072" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Proyectos</h3>
+                            <p class="card__text">Aquí encontrarás todos los proyectos</p>
+                        </div>
+                        <span class="card__cta" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
+
+                    <a class="card" href="Apps.html" data-reveal>
+                        <div class="card__media">
+                            <img class="duotone" src="images/uyMe8v.jpg" alt="" width="2048" height="1364" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Apps</h3>
+                            <p class="card__text">Descripción de aplicaciones usadas</p>
+                        </div>
+                        <span class="card__cta" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--flush-top">
+            <div class="container">
+                <div class="panel panel--dark cta-band" data-reveal>
+                    <h3>Mira el código de esta página</h3>
+                    <a class="btn btn--light" href="https://github.com/Simonloff/School-Page" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--solid" viewBox="0 0 24 24" aria-hidden="true"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/></svg>
+                        Ver en GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2024 Simon Orloff - Portafolio Escolar</p>
         </div>
-        <div class="card">
-            <a href="Preparatoria/3°P/TerceroPrepa.html">
-                <img src="images/Wallpapers-pexels-photo.jpg" alt="Proyectos">
-                <h2>Proyectos</h2>
-                <p>Aquí encontrarás todos los proyectos</p>
-            </a>
-        </div>
-        <div class="card">
-            <a href="Apps.html">
-                <img src="images/uyMe8v.jpg" alt="Apps">
-                <h2>Apps</h2>
-                <p>Descripción de Aplicaciones usadas</p>
-            </a>
-        </div>
-    </div>
-    <a href="https://github.com/Simonloff/School-Page" target="_blank">
-      <button class="btn">
-        <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="github">
-          <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path>
-        </svg>
-      </button>
-    </a>
-
-
-
-
-    <footer>
-        <p>&copy; 2024 Simon Orloff - Portafolio Escolar</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

@@ -12,26 +12,94 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil de Simon Orloff: futuro ingeniero mecánico apasionado por los coches y la mecánica.">
+    <meta name="theme-color" content="#403022">
     <title>Perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Aqui podras encontrar mi informacion</h1>
+    <!-- Filtro duotono con la paleta (tinta las fotos en café/beige) -->
+    <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+        <filter id="duotone" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
+            <feComponentTransfer>
+                <feFuncR type="linear" slope="1.25" intercept="-0.1"/>
+                <feFuncG type="linear" slope="1.25" intercept="-0.1"/>
+                <feFuncB type="linear" slope="1.25" intercept="-0.1"/>
+            </feComponentTransfer>
+            <feComponentTransfer>
+                <feFuncR type="table" tableValues="0.149 0.451 0.651 0.859"/>
+                <feFuncG type="table" tableValues="0.082 0.345 0.553 0.867"/>
+                <feFuncB type="table" tableValues="0.043 0.251 0.467 0.847"/>
+            </feComponentTransfer>
+        </filter>
+    </svg>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Principal">
+            <a class="navbar__logo" href="index.html" aria-label="Simon Orloff, inicio">SO<span>.</span></a>
+            <ul class="navbar__links">
+                <li><a href="Perfil.html" aria-current="page">Perfil</a></li>
+                <li><a href="Preparatoria/3°P/TerceroPrepa.html">Proyectos</a></li>
+                <li><a href="Apps.html">Apps</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>Perfil</h2>
-        <ul>
-            <p> ¡Hola! Soy Simon Orloff. Mi sueño es convertirme en ingeniero mecánico. Mis intereses incluyen los coches y todo lo relacionado con la mecánica.</p>
-    </section>
 
-    <!-- Botón para regresar al inicio -->
-    <button onclick="window.location.href='index.html'" style="background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-      Ir a Inicio
-    </button>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="eyebrow">Sobre mí</span>
+                <h1>Perfil</h1>
+                <p class="lead">Aquí podrás encontrar mi información.</p>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Simon Orloff</p>
+        <section class="section">
+            <div class="container">
+                <div class="split">
+                    <article class="panel" data-reveal>
+                        <h2>¡Hola! Soy Simon Orloff</h2>
+                        <p>Mi sueño es convertirme en ingeniero mecánico. Mis intereses incluyen los coches y todo lo relacionado con la mecánica.</p>
+                    </article>
+
+                    <aside class="panel panel--dark" data-reveal>
+                        <p class="panel__label">Mi sueño</p>
+                        <p class="panel__big">Ingeniero Mecánico</p>
+                        <div class="tag-list">
+                            <span class="tag">Coches</span>
+                            <span class="tag">Mecánica</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--flush-top">
+            <div class="container">
+                <figure class="figure" data-reveal>
+                    <img class="duotone" src="images/foto.png" alt="Banner de mi escuela" width="1920" height="480" loading="lazy" decoding="async">
+                    <figcaption>Mi escuela</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div class="container page-actions">
+            <a class="btn" href="index.html">
+                <svg class="icon icon--prev" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                Ir a Inicio
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2024 Simon Orloff</p>
+        </div>
     </footer>
 </body>
 </html>

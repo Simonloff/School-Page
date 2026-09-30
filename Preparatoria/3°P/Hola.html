@@ -12,26 +12,56 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto 1: una página web.">
+    <meta name="theme-color" content="#403022">
     <title>Proyecto 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../estilo.css">
+    <script src="../../script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Este es el proyecto 1</h1>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Principal">
+            <a class="navbar__logo" href="../../index.html" aria-label="Simon Orloff, inicio">SO<span>.</span></a>
+            <ul class="navbar__links">
+                <li><a href="../../Perfil.html">Perfil</a></li>
+                <li><a href="TerceroPrepa.html" aria-current="true">Proyectos</a></li>
+                <li><a href="../../Apps.html">Apps</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>Esta pagina web es el proyecto</h2>
-        <ul>
-            <p>Pagina web</p>
-    </section>
 
-    <!-- Botón para regresar al inicio -->
-    <button onclick="window.location.href='Semestre2.html'" style="background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-      Ir a proyectos
-    </button>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="eyebrow">Proyecto</span>
+                <h1>Este es el proyecto 1</h1>
+                <p class="lead">Esta página web es el proyecto.</p>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Simon Orloff</p>
+        <section class="section">
+            <div class="container">
+                <div class="panel" data-reveal>
+                    <p>Página web</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container page-actions">
+            <a class="btn" href="Semestre2.html">
+                <svg class="icon icon--prev" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                Ir a proyectos
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2024 Simon Orloff</p>
+        </div>
     </footer>
 </body>
 </html>
