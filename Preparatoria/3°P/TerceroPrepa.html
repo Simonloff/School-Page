@@ -12,38 +12,92 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Semestres del primer año de preparatoria: Sistemas de la información y Páginas Web.">
+    <meta name="theme-color" content="#403022">
     <title>Primer año de preparatoria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../estilo.css">
+    <script src="../../script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Semestres</h1>
-    </header>
-    </header>
-<section>
-    <div class="section">
-        <div class="card">
-            <a href="Semestre1.html">
-                <img src="sdli.webp" alt="Sistemas de la informacion">
-                <h2>Sistemas de la informacion</h2>
-                <p>Proyectos de Sistemas de la informacion</p>
-            </a>
-        </div>
-        <div class="card">
-            <a href="Semestre2.html">
-                <img src="ia.jpg" alt="Informatica aplicada">
-                <h2>Paginas Web</h2>
-                <p>Proyectos de Paginas web</p>
-            </a>
-        </div>
-        </section>
-    <!-- Botón para regresar al inicio -->
-    <button onclick="window.location.href='../../index.html'" style="background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-      Ir a Inicio
-    </button>
+    <!-- Filtro duotono con la paleta (tinta las fotos en café/beige) -->
+    <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+        <filter id="duotone" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
+            <feComponentTransfer>
+                <feFuncR type="linear" slope="1.25" intercept="-0.1"/>
+                <feFuncG type="linear" slope="1.25" intercept="-0.1"/>
+                <feFuncB type="linear" slope="1.25" intercept="-0.1"/>
+            </feComponentTransfer>
+            <feComponentTransfer>
+                <feFuncR type="table" tableValues="0.149 0.451 0.651 0.859"/>
+                <feFuncG type="table" tableValues="0.082 0.345 0.553 0.867"/>
+                <feFuncB type="table" tableValues="0.043 0.251 0.467 0.847"/>
+            </feComponentTransfer>
+        </filter>
+    </svg>
 
-    <footer>
-        <p>&copy; 2024 Simon Orloff</p>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Principal">
+            <a class="navbar__logo" href="../../index.html" aria-label="Simon Orloff, inicio">SO<span>.</span></a>
+            <ul class="navbar__links">
+                <li><a href="../../Perfil.html">Perfil</a></li>
+                <li><a href="TerceroPrepa.html" aria-current="page">Proyectos</a></li>
+                <li><a href="../../Apps.html">Apps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="eyebrow">Proyectos</span>
+                <h1>Semestres</h1>
+                <p class="lead">Primer año de preparatoria.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="card-grid">
+                    <a class="card" href="Semestre1.html" data-reveal>
+                        <div class="card__media">
+                            <img class="duotone" src="sdli.webp" alt="" width="2560" height="2560" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card__body">
+                            <h2 class="card__title">Sistemas de la información</h2>
+                            <p class="card__text">Proyectos de Sistemas de la información</p>
+                        </div>
+                        <span class="card__cta" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
+                    <a class="card" href="Semestre2.html" data-reveal>
+                        <div class="card__media">
+                            <img class="duotone" src="ia.jpg" alt="" width="1440" height="1440" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card__body">
+                            <h2 class="card__title">Páginas Web</h2>
+                            <p class="card__text">Proyectos de Páginas Web</p>
+                        </div>
+                        <span class="card__cta" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container page-actions">
+            <a class="btn" href="../../index.html">
+                <svg class="icon icon--prev" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                Ir a Inicio
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2024 Simon Orloff</p>
+        </div>
     </footer>
 </body>
 </html>
